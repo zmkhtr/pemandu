@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "607886413864",
+    "firebase_url": "https://pemandu-1a985.firebaseio.com",
+    "project_id": "pemandu-1a985",
+    "storage_bucket": "pemandu-1a985.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607886413864:android:dab1ffc4fdf6afcb",
+        "android_client_info": {
+          "package_name": "com.sahabatpnj.pemandu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607886413864-pcohio2oeg7amll3vla59c7a68i4fekl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sahabatpnj.pemandu",
+            "certificate_hash": "4edb61609fece0ed0bd488319e3ce9f40eeab20f"
+          }
+        },
+        {
+          "client_id": "607886413864-fel1g08mbogd8ltm7ann1ihchfe19c03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMpDY9vzoR_wve4DMGwW2x02ZwsIOB88M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607886413864-fel1g08mbogd8ltm7ann1ihchfe19c03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

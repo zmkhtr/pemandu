@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sahabatpnj.pemandu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label=""
+        android:roundIcon="@mipmap/icon"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_menu_slide"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuSlideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewDaerahActivity" />
+        <activity android:name=".ViewProfilPemanduActivity" />
+        <activity android:name=".TripDestinationListActivity" />
+        <activity android:name=".ViewTripDestinationActivity" />
+        <activity android:name=".ProfileViewActivity" />
+        <activity
+            android:name=".account.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".account.LoginActivity" />
+        <activity android:name=".account.AfterRegisterActivity" />
+        <activity android:name=".account.RegisterTouristActivity" />
+        <activity android:name=".account.RegisterTourguideActivity" />
+        <activity android:name=".TripListAddActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".AddDestinationActivity" />
+        <activity android:name=".ViewDestinationActivity" />
+        <activity android:name=".TripListAllActivity" />
+        <activity android:name=".ViewDestinationAllActivity" />
+        <activity android:name=".ChatActivity">
+            <intent-filter>
+            <action android:name="com.sahabatpnj.pemandu.TARGET_NOTIFICATION" />
+            <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MessageListActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressBarEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="70dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imgEditphoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:src="@drawable/ic_add_a_photo"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click on photo to change the photo"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:gravity="center_horizontal"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full name"
+                android:inputType="textMultiLine"
+                android:id="@+id/etEditName"/>
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/textEditAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About You :" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="About you"
+                android:inputType="textMultiLine"
+                android:id="@+id/etEditAboutYou"/>
+        <TextView
+            android:id="@+id/textEditLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location : "
+            android:padding="10dp"/>
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerEditList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:background="@android:drawable/btn_dropdown">
+
+        </com.jaredrummler.materialspinner.MaterialSpinner>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEditDone"
+            android:layout_marginTop="15dp"
+            android:text="done"/>
+
+    </LinearLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

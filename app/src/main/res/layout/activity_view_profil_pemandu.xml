@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sahabatpnj.pemandu.ViewProfilPemanduActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="55dp">
+        <ProgressBar
+            android:id="@+id/progressBarProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:contentDescription="@string/app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"/>
+                <TextView
+                    android:layout_below="@+id/imgProfile"
+                    android:id="@+id/textProfileNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:layout_marginTop="-53dp"/>
+
+        <LinearLayout
+            android:id="@+id/language_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textProfileNama"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email_black_24dp"/>
+            <TextView
+                android:id="@+id/textProfileEmail"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/trip_destination_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/language_layout"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="5dp">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_question_answer_black_24dp"/>
+            <TextView
+                android:id="@+id/textProfileAbout"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonProfileAddDestination"
+            android:layout_below="@+id/trip_destination_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trip Destination offer"
+            android:background="#c7c7c7"/>
+
+        <Button
+            android:id="@+id/btnMessageTourguide"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message Tourguide"
+            android:background="#2e803e"/>
+
+    </RelativeLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarProfileView">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Tourguide"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

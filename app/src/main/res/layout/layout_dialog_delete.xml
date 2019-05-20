@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/sureDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose the action :"
+            android:layout_margin="25dp"
+            android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btnDialogNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Detail"
+                android:background="#00ffffff"
+                android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnDialogYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete data"
+            android:background="#00ffffff"
+            android:textColor="#ff0000"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
